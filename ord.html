@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Ord</title>
+<script type="text/javascript">
+function eva()
+{
+    var t1=document.f1.t1.value;
+    var t2=document.f1.t2.value;
+     var t3=document.f1.t3.value;
+     var t4=document.f1.t4.value;
+      var t5=document.f1.t5.value;
+    document.write("<table><tr><th>ITEM</th><th>PRICE</th><th>QUANTITY</th><th>AMOUNT</th></tr>");
+    if(t1!=0)
+    {
+        var sum1=t1*180;
+        document.write("<br><tr><td>Chicken Biriyani</td><td>180.00</td><td>" + t1 +"</td><td>"+sum1+"</td></tr>");
+    }
+    else if(t1==0||t1==NULL)
+        sum1=0;
+     if(t2!=0)
+    {
+        var sum2=t2*135;
+        document.write("<br><tr><td>Khuska</td><td>135.00</td><td>" + t2 +"</td><td>"+sum2+"</td></tr>");
+    }
+    else if(t2==0||t2==NULL)
+        sum2=0;
+    if(t3!=0)
+    {
+        var sum3=t3*230;
+        document.write("<br><tr><td>Mutto Biriyani</td><td>230.00</td><td>" + t3 +"</td><td>"+sum3+"</td></tr>");
+    }
+    else if(t3==0||t3==NULL)
+        sum3=0;
+     if(t4!=0)
+    {
+        var sum4=t4*146;
+        document.write("<br><tr><td>Egg Biriyani</td><td>146.00</td><td>" + t4 +"</td><td>"+sum4+"</td></tr>");
+    }
+    else if(t4==0||t4==NULL)
+        sum4=0;
+     if(t5!=0)
+    {
+        var sum5=t5*258;
+        document.write("<br><tr><td>Prawn Biriyani</td><td>258.00</td><td>" + t5 +"</td><td>"+sum5+"</td></tr>");
+    }
+    else if(t5==0||t5==NULL)
+        sum5=0;
+    var total=sum1+sum2+sum3+sum4+sum5;
+     document.write("<tr><th>TOTAL AMOUNT</th><td></td><td></td><td>"+total+"</td></tr></table>");
+}
+</script>
+</head>
+<body bgcolor="aquamarine" text="brown">
+<br>
+<h1>Order the food:</h1>
+<br><br>
+<form name="f1">
+<pre>
+    <img src="img3.png" width="50" height="50" align="middle">  <font face="Arial" size="4"><b>Chicken Biriyani</b></font>       <font size="4">180.00</font>          <input type="text" name="t1" value="1" size="1"> 
+    
+    <img src="img4.png" width="50" height="50" align="middle">  <font face="Arial" size="4"><b>Khuska</b></font>                  <font size="4">135.00</font>          <input type="text" name="t2" value="1" size="1">
+
+    <img src="img5.png" width="50" height="50" align="middle">  <font face="Arial" size="4"><b>Mutton Biriyani</b></font>         <font size="4">230.00</font>          <input type="text" name="t3" value="1" size="1">
+   
+    <img src="img6.png" width="50" height="50" align="middle">  <font face="Arial" size="4"><b>Egg Biriyani</b></font>             <font size="4">146.00</font>          <input type="text" name="t4" value="1" size="1">        
+            
+    <img src="img7.png" width="50" height="50" align="middle">  <font face="Arial" size="4"><b>Prawn Biriyani</b></font>          <font size="4">258.00</font>          <input type="text" name="t5" value="1" size="1">
+                      
+
+                         <input type="button" value="Bill" onclick="eva()">
+</pre>
+</form>
+<br><br>
+
+</body>
+</html>
